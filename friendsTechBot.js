@@ -12,7 +12,8 @@ require("dotenv").config();
 */
 
 const friendsAddress = '0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4';
-const provider = new ethers.JsonRpcProvider(`https://mainnet.base.org`); // https://base.blockpi.network/v1/rpc/public
+// const provider = new ethers.JsonRpcProvider(`https://mainnet.base.org`); // https://base.blockpi.network/v1/rpc/public
+const provider = new ethers.JsonRpcProvider(`https://sepolia.base.org`); // https://base.blockpi.network/v1/rpc/public
 
 const wallet = new ethers.Wallet(process.env.PRIVATE_KEY);
 const account = wallet.connect(provider);

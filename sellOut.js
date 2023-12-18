@@ -15,7 +15,8 @@ const sells = [
 
 const friendsAddress = '0xCF205808Ed36593aa40a44F10c7f7C2F67d4A4d4';
 const wallet = new ethers.Wallet(process.env.PRIVATE_KEY);
-const provider = new ethers.JsonRpcProvider(`https://mainnet.base.org`);
+// const provider = new ethers.JsonRpcProvider(`https://mainnet.base.org`);
+const provider = new ethers.JsonRpcProvider(`https://sepolia.base.org`);
 const gasPrice = ethers.parseUnits('0.000000000000049431', 'ether');
 const account = wallet.connect(provider);
 const friends = new ethers.Contract(
